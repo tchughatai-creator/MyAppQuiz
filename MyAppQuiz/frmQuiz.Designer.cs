@@ -33,19 +33,22 @@
             // 
             // btnBackRadio
             // 
-            this.btnBackRadio.Location = new System.Drawing.Point(520, 407);
+            this.btnBackRadio.Location = new System.Drawing.Point(693, 501);
+            this.btnBackRadio.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnBackRadio.Name = "btnBackRadio";
-            this.btnBackRadio.Size = new System.Drawing.Size(75, 23);
+            this.btnBackRadio.Size = new System.Drawing.Size(100, 28);
             this.btnBackRadio.TabIndex = 1;
             this.btnBackRadio.Text = "Back";
             this.btnBackRadio.UseVisualStyleBackColor = true;
+            this.btnBackRadio.Click += new System.EventHandler(this.btnBackRadio_Click);
             // 
             // frmQuiz
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(607, 442);
+            this.ClientSize = new System.Drawing.Size(809, 544);
             this.Controls.Add(this.btnBackRadio);
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "frmQuiz";
             this.Text = "frmQuiz";
             this.ResumeLayout(false);
