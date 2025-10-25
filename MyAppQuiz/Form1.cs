@@ -25,7 +25,15 @@ namespace MyAppQuiz
         {
             InitializeComponent();
         }
+    
 
+            private void btnQuiz2_Click(object sender, EventArgs e)
+            {
+                frmQuiz q = new frmQuiz();
+                q.Show();
+                this.Hide();
+            }
+    
         private void Form1_Load(object sender, EventArgs e)
         {
 
@@ -165,6 +173,16 @@ namespace MyAppQuiz
         {
             frmAbout frm = new frmAbout();
             frm.ShowDialog();
+        }
+
+        private void panelRight_Paint(object sender, PaintEventArgs e)
+        {
+            
+        }
+
+        private void groupBox1_Enter(object sender, EventArgs e)
+        {
+
         }
     }
 }
