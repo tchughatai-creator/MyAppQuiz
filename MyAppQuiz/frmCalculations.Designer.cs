@@ -29,14 +29,19 @@
         private void InitializeComponent()
         {
             this.label1 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
-            this.checkBox1 = new System.Windows.Forms.CheckBox();
-            this.checkBox2 = new System.Windows.Forms.CheckBox();
-            this.checkBox3 = new System.Windows.Forms.CheckBox();
-            this.checkBox4 = new System.Windows.Forms.CheckBox();
+            this.radiobtnAdd = new System.Windows.Forms.RadioButton();
+            this.grpBoxRadioBtns = new System.Windows.Forms.GroupBox();
+            this.radiobtnSub = new System.Windows.Forms.RadioButton();
+            this.radiobtnMulti = new System.Windows.Forms.RadioButton();
+            this.radiobtnDev = new System.Windows.Forms.RadioButton();
+            this.txtboxNum1 = new System.Windows.Forms.TextBox();
+            this.txtboxNum2 = new System.Windows.Forms.TextBox();
+            this.lblFirstnum = new System.Windows.Forms.Label();
+            this.lblSecondnum = new System.Windows.Forms.Label();
+            this.btnCalc = new System.Windows.Forms.Button();
+            this.btnBack = new System.Windows.Forms.Button();
+            this.grpBoxRadioBtns.SuspendLayout();
             this.SuspendLayout();
             // 
             // label1
@@ -48,21 +53,6 @@
             this.label1.Size = new System.Drawing.Size(270, 25);
             this.label1.TabIndex = 0;
             this.label1.Text = "Choose one opreation only";
-            this.label1.Click += new System.EventHandler(this.label1_Click);
-            // 
-            // textBox1
-            // 
-            this.textBox1.Location = new System.Drawing.Point(17, 130);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(100, 20);
-            this.textBox1.TabIndex = 2;
-            // 
-            // textBox2
-            // 
-            this.textBox2.Location = new System.Drawing.Point(17, 156);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(100, 20);
-            this.textBox2.TabIndex = 3;
             // 
             // label2
             // 
@@ -70,76 +60,146 @@
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.Location = new System.Drawing.Point(12, 102);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(203, 25);
+            this.label2.Size = new System.Drawing.Size(152, 25);
             this.label2.TabIndex = 4;
-            this.label2.Text = "Enter valid numbers";
+            this.label2.Text = "Enter numbers";
             // 
-            // button1
+            // radiobtnAdd
             // 
-            this.button1.Location = new System.Drawing.Point(17, 196);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
-            this.button1.TabIndex = 5;
-            this.button1.Text = "Calculate";
-            this.button1.UseVisualStyleBackColor = true;
+            this.radiobtnAdd.AutoSize = true;
+            this.radiobtnAdd.Location = new System.Drawing.Point(2, 19);
+            this.radiobtnAdd.Name = "radiobtnAdd";
+            this.radiobtnAdd.Size = new System.Drawing.Size(63, 17);
+            this.radiobtnAdd.TabIndex = 11;
+            this.radiobtnAdd.TabStop = true;
+            this.radiobtnAdd.Text = "Addition";
+            this.radiobtnAdd.UseVisualStyleBackColor = true;
+            this.radiobtnAdd.CheckedChanged += new System.EventHandler(this.radiobtnAdd_CheckedChanged);
             // 
-            // checkBox1
+            // grpBoxRadioBtns
             // 
-            this.checkBox1.AutoSize = true;
-            this.checkBox1.Location = new System.Drawing.Point(17, 46);
-            this.checkBox1.Name = "checkBox1";
-            this.checkBox1.Size = new System.Drawing.Size(64, 17);
-            this.checkBox1.TabIndex = 6;
-            this.checkBox1.Text = "Addition";
-            this.checkBox1.UseVisualStyleBackColor = true;
+            this.grpBoxRadioBtns.Controls.Add(this.radiobtnDev);
+            this.grpBoxRadioBtns.Controls.Add(this.radiobtnMulti);
+            this.grpBoxRadioBtns.Controls.Add(this.radiobtnSub);
+            this.grpBoxRadioBtns.Controls.Add(this.radiobtnAdd);
+            this.grpBoxRadioBtns.Location = new System.Drawing.Point(15, 37);
+            this.grpBoxRadioBtns.Name = "grpBoxRadioBtns";
+            this.grpBoxRadioBtns.Size = new System.Drawing.Size(194, 62);
+            this.grpBoxRadioBtns.TabIndex = 12;
+            this.grpBoxRadioBtns.TabStop = false;
+            this.grpBoxRadioBtns.Enter += new System.EventHandler(this.groupBox1_Enter);
             // 
-            // checkBox2
+            // radiobtnSub
             // 
-            this.checkBox2.AutoSize = true;
-            this.checkBox2.Location = new System.Drawing.Point(115, 46);
-            this.checkBox2.Name = "checkBox2";
-            this.checkBox2.Size = new System.Drawing.Size(80, 17);
-            this.checkBox2.TabIndex = 7;
-            this.checkBox2.Text = "Subtraction";
-            this.checkBox2.UseVisualStyleBackColor = true;
+            this.radiobtnSub.AutoSize = true;
+            this.radiobtnSub.Location = new System.Drawing.Point(103, 19);
+            this.radiobtnSub.Name = "radiobtnSub";
+            this.radiobtnSub.Size = new System.Drawing.Size(65, 17);
+            this.radiobtnSub.TabIndex = 12;
+            this.radiobtnSub.TabStop = true;
+            this.radiobtnSub.Text = "Subtract";
+            this.radiobtnSub.UseVisualStyleBackColor = true;
+            this.radiobtnSub.CheckedChanged += new System.EventHandler(this.radiobtnSub_CheckedChanged);
             // 
-            // checkBox3
+            // radiobtnMulti
             // 
-            this.checkBox3.AutoSize = true;
-            this.checkBox3.Location = new System.Drawing.Point(17, 82);
-            this.checkBox3.Name = "checkBox3";
-            this.checkBox3.Size = new System.Drawing.Size(87, 17);
-            this.checkBox3.TabIndex = 8;
-            this.checkBox3.Text = "Multiplication";
-            this.checkBox3.UseVisualStyleBackColor = true;
+            this.radiobtnMulti.AutoSize = true;
+            this.radiobtnMulti.Location = new System.Drawing.Point(2, 39);
+            this.radiobtnMulti.Name = "radiobtnMulti";
+            this.radiobtnMulti.Size = new System.Drawing.Size(60, 17);
+            this.radiobtnMulti.TabIndex = 13;
+            this.radiobtnMulti.TabStop = true;
+            this.radiobtnMulti.Text = "Multiply";
+            this.radiobtnMulti.UseVisualStyleBackColor = true;
+            this.radiobtnMulti.CheckedChanged += new System.EventHandler(this.radiobtnMulti_CheckedChanged);
             // 
-            // checkBox4
+            // radiobtnDev
             // 
-            this.checkBox4.AutoSize = true;
-            this.checkBox4.Location = new System.Drawing.Point(115, 82);
-            this.checkBox4.Name = "checkBox4";
-            this.checkBox4.Size = new System.Drawing.Size(63, 17);
-            this.checkBox4.TabIndex = 9;
-            this.checkBox4.Text = "Division";
-            this.checkBox4.UseVisualStyleBackColor = true;
+            this.radiobtnDev.AutoSize = true;
+            this.radiobtnDev.Location = new System.Drawing.Point(103, 39);
+            this.radiobtnDev.Name = "radiobtnDev";
+            this.radiobtnDev.Size = new System.Drawing.Size(66, 17);
+            this.radiobtnDev.TabIndex = 14;
+            this.radiobtnDev.TabStop = true;
+            this.radiobtnDev.Text = "Devision";
+            this.radiobtnDev.UseVisualStyleBackColor = true;
+            this.radiobtnDev.CheckedChanged += new System.EventHandler(this.radiobtnDev_CheckedChanged);
+            // 
+            // txtboxNum1
+            // 
+            this.txtboxNum1.Location = new System.Drawing.Point(109, 140);
+            this.txtboxNum1.Name = "txtboxNum1";
+            this.txtboxNum1.Size = new System.Drawing.Size(100, 20);
+            this.txtboxNum1.TabIndex = 13;
+            this.txtboxNum1.TextChanged += new System.EventHandler(this.txtboxNum1_TextChanged);
+            // 
+            // txtboxNum2
+            // 
+            this.txtboxNum2.Location = new System.Drawing.Point(109, 166);
+            this.txtboxNum2.Name = "txtboxNum2";
+            this.txtboxNum2.Size = new System.Drawing.Size(100, 20);
+            this.txtboxNum2.TabIndex = 14;
+            this.txtboxNum2.TextChanged += new System.EventHandler(this.txtboxNum2_TextChanged);
+            // 
+            // lblFirstnum
+            // 
+            this.lblFirstnum.AutoSize = true;
+            this.lblFirstnum.Location = new System.Drawing.Point(14, 143);
+            this.lblFirstnum.Name = "lblFirstnum";
+            this.lblFirstnum.Size = new System.Drawing.Size(66, 13);
+            this.lblFirstnum.TabIndex = 15;
+            this.lblFirstnum.Text = "First Number";
+            this.lblFirstnum.Click += new System.EventHandler(this.lblFirstnum_Click);
+            // 
+            // lblSecondnum
+            // 
+            this.lblSecondnum.AutoSize = true;
+            this.lblSecondnum.Location = new System.Drawing.Point(14, 169);
+            this.lblSecondnum.Name = "lblSecondnum";
+            this.lblSecondnum.Size = new System.Drawing.Size(84, 13);
+            this.lblSecondnum.TabIndex = 16;
+            this.lblSecondnum.Text = "Second Number";
+            this.lblSecondnum.Click += new System.EventHandler(this.lblSecondnum_Click);
+            // 
+            // btnCalc
+            // 
+            this.btnCalc.Location = new System.Drawing.Point(17, 198);
+            this.btnCalc.Name = "btnCalc";
+            this.btnCalc.Size = new System.Drawing.Size(75, 23);
+            this.btnCalc.TabIndex = 17;
+            this.btnCalc.Text = "Calculate";
+            this.btnCalc.UseVisualStyleBackColor = true;
+            this.btnCalc.Click += new System.EventHandler(this.btnCalc_Click);
+            // 
+            // btnBack
+            // 
+            this.btnBack.Location = new System.Drawing.Point(257, 233);
+            this.btnBack.Name = "btnBack";
+            this.btnBack.Size = new System.Drawing.Size(75, 23);
+            this.btnBack.TabIndex = 18;
+            this.btnBack.Text = "Back";
+            this.btnBack.UseVisualStyleBackColor = true;
+            this.btnBack.Click += new System.EventHandler(this.btnBack_Click);
             // 
             // frmCalculations
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(353, 268);
-            this.Controls.Add(this.checkBox4);
-            this.Controls.Add(this.checkBox3);
-            this.Controls.Add(this.checkBox2);
-            this.Controls.Add(this.checkBox1);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.btnBack);
+            this.Controls.Add(this.btnCalc);
+            this.Controls.Add(this.lblSecondnum);
+            this.Controls.Add(this.lblFirstnum);
+            this.Controls.Add(this.txtboxNum2);
+            this.Controls.Add(this.txtboxNum1);
+            this.Controls.Add(this.grpBoxRadioBtns);
             this.Controls.Add(this.label2);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox1);
             this.Controls.Add(this.label1);
             this.Name = "frmCalculations";
             this.Text = "frmCalculations";
             this.Load += new System.EventHandler(this.frmCalculations_Load);
+            this.grpBoxRadioBtns.ResumeLayout(false);
+            this.grpBoxRadioBtns.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -148,13 +208,17 @@
         #endregion
 
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox2;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.CheckBox checkBox1;
-        private System.Windows.Forms.CheckBox checkBox2;
-        private System.Windows.Forms.CheckBox checkBox3;
-        private System.Windows.Forms.CheckBox checkBox4;
+        private System.Windows.Forms.RadioButton radiobtnAdd;
+        private System.Windows.Forms.GroupBox grpBoxRadioBtns;
+        private System.Windows.Forms.RadioButton radiobtnDev;
+        private System.Windows.Forms.RadioButton radiobtnMulti;
+        private System.Windows.Forms.RadioButton radiobtnSub;
+        private System.Windows.Forms.TextBox txtboxNum1;
+        private System.Windows.Forms.TextBox txtboxNum2;
+        private System.Windows.Forms.Label lblFirstnum;
+        private System.Windows.Forms.Label lblSecondnum;
+        private System.Windows.Forms.Button btnCalc;
+        private System.Windows.Forms.Button btnBack;
     }
 }
