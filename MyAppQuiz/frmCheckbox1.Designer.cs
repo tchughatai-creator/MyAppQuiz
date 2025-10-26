@@ -207,6 +207,7 @@
             this.Controls.Add(this.btnBackRadio);
             this.Name = "FrmCheckbox1";
             this.Text = "frmCheckbox1";
+            this.Load += new System.EventHandler(this.FrmCheckbox1_Load);
             this.GrpQuestion.ResumeLayout(false);
             this.GrpQuestion.PerformLayout();
             this.pnlCheckBoxes.ResumeLayout(false);

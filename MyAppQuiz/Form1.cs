@@ -184,5 +184,27 @@ namespace MyAppQuiz
         {
 
         }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            frmMethods frm = new frmMethods();
+            frm.ShowDialog();
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            frmRandom frm = new frmRandom();
+            frm.ShowDialog();
+            //to close the form
+            this.DialogResult = DialogResult.OK;
+        }
+
+        private void btnCalculations_Click(object sender, EventArgs e)
+        {
+            frmCalculations frm = new frmCalculations();
+            frm.ShowDialog();
+            //to close the form
+            this.DialogResult = DialogResult.OK;
+        }
     }
 }

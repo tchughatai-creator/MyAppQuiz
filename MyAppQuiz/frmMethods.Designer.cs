@@ -1,0 +1,432 @@
+﻿namespace MyAppQuiz
+{
+    partial class frmMethods
+    {
+        /// <summary>
+        /// Required designer variable.
+        /// </summary>
+        private System.ComponentModel.IContainer components = null;
+
+        /// <summary>
+        /// Clean up any resources being used.
+        /// </summary>
+        /// <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        protected override void Dispose(bool disposing)
+        {
+            if (disposing && (components != null))
+            {
+                components.Dispose();
+            }
+            base.Dispose(disposing);
+        }
+
+        #region Windows Form Designer generated code
+
+        /// <summary>
+        /// Required method for Designer support - do not modify
+        /// the contents of this method with the code editor.
+        /// </summary>
+        private void InitializeComponent()
+        {
+            this.BtnMultOutputTuple = new System.Windows.Forms.Button();
+            this.PassArg_out = new System.Windows.Forms.Button();
+            this.BtnArgByVal = new System.Windows.Forms.Button();
+            this.BtnArgByRef = new System.Windows.Forms.Button();
+            this.lstDisplay = new System.Windows.Forms.ListBox();
+            this.BtnGeneratePronic = new System.Windows.Forms.Button();
+            this.groupBox4 = new System.Windows.Forms.GroupBox();
+            this.BtnAdd54 = new System.Windows.Forms.Button();
+            this.BtnPrintMax = new System.Windows.Forms.Button();
+            this.label4 = new System.Windows.Forms.Label();
+            this.BtnPrintSign = new System.Windows.Forms.Button();
+            this.TxtNumber = new System.Windows.Forms.TextBox();
+            this.BtnMultOutput = new System.Windows.Forms.Button();
+            this.groupBox3 = new System.Windows.Forms.GroupBox();
+            this.btnBack = new System.Windows.Forms.Button();
+            this.label3 = new System.Windows.Forms.Label();
+            this.TxtBalance = new System.Windows.Forms.TextBox();
+            this.TxtAmount = new System.Windows.Forms.TextBox();
+            this.BtnCheckBalance = new System.Windows.Forms.Button();
+            this.BtnWithdraw = new System.Windows.Forms.Button();
+            this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.BtnDeposit = new System.Windows.Forms.Button();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
+            this.TxtB = new System.Windows.Forms.TextBox();
+            this.TxtA = new System.Windows.Forms.TextBox();
+            this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.BtnCalculate = new System.Windows.Forms.Button();
+            this.groupBox4.SuspendLayout();
+            this.groupBox3.SuspendLayout();
+            this.groupBox2.SuspendLayout();
+            this.groupBox1.SuspendLayout();
+            this.SuspendLayout();
+            // 
+            // BtnMultOutputTuple
+            // 
+            this.BtnMultOutputTuple.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
+            this.BtnMultOutputTuple.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.BtnMultOutputTuple.ForeColor = System.Drawing.Color.Red;
+            this.BtnMultOutputTuple.Location = new System.Drawing.Point(487, 228);
+            this.BtnMultOutputTuple.Name = "BtnMultOutputTuple";
+            this.BtnMultOutputTuple.Size = new System.Drawing.Size(115, 34);
+            this.BtnMultOutputTuple.TabIndex = 31;
+            this.BtnMultOutputTuple.Text = "Multiple outputs using tuples";
+            this.BtnMultOutputTuple.UseVisualStyleBackColor = false;
+            this.BtnMultOutputTuple.Click += new System.EventHandler(this.BtnMultOutputTuple_Click);
+            // 
+            // PassArg_out
+            // 
+            this.PassArg_out.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
+            this.PassArg_out.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.PassArg_out.ForeColor = System.Drawing.Color.Red;
+            this.PassArg_out.Location = new System.Drawing.Point(487, 148);
+            this.PassArg_out.Name = "PassArg_out";
+            this.PassArg_out.Size = new System.Drawing.Size(115, 34);
+            this.PassArg_out.TabIndex = 29;
+            this.PassArg_out.Text = "Passing argument as output parameter";
+            this.PassArg_out.UseVisualStyleBackColor = false;
+            this.PassArg_out.Click += new System.EventHandler(this.PassArg_out_Click);
+            // 
+            // BtnArgByVal
+            // 
+            this.BtnArgByVal.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
+            this.BtnArgByVal.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.BtnArgByVal.ForeColor = System.Drawing.Color.Red;
+            this.BtnArgByVal.Location = new System.Drawing.Point(487, 39);
+            this.BtnArgByVal.Name = "BtnArgByVal";
+            this.BtnArgByVal.Size = new System.Drawing.Size(115, 34);
+            this.BtnArgByVal.TabIndex = 28;
+            this.BtnArgByVal.Text = "Passing argument by val";
+            this.BtnArgByVal.UseVisualStyleBackColor = false;
+            this.BtnArgByVal.Click += new System.EventHandler(this.BtnArgByVal_Click);
+            // 
+            // BtnArgByRef
+            // 
+            this.BtnArgByRef.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
+            this.BtnArgByRef.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.BtnArgByRef.ForeColor = System.Drawing.Color.Red;
+            this.BtnArgByRef.Location = new System.Drawing.Point(487, 80);
+            this.BtnArgByRef.Name = "BtnArgByRef";
+            this.BtnArgByRef.Size = new System.Drawing.Size(115, 34);
+            this.BtnArgByRef.TabIndex = 27;
+            this.BtnArgByRef.Text = "Passing argument by ref";
+            this.BtnArgByRef.UseVisualStyleBackColor = false;
+            this.BtnArgByRef.Click += new System.EventHandler(this.BtnArgByRef_Click);
+            // 
+            // lstDisplay
+            // 
+            this.lstDisplay.BackColor = System.Drawing.Color.BurlyWood;
+            this.lstDisplay.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lstDisplay.ForeColor = System.Drawing.Color.Firebrick;
+            this.lstDisplay.FormattingEnabled = true;
+            this.lstDisplay.ItemHeight = 16;
+            this.lstDisplay.Location = new System.Drawing.Point(125, 19);
+            this.lstDisplay.Name = "lstDisplay";
+            this.lstDisplay.Size = new System.Drawing.Size(87, 132);
+            this.lstDisplay.TabIndex = 6;
+            this.lstDisplay.SelectedIndexChanged += new System.EventHandler(this.lstDisplay_SelectedIndexChanged);
+            // 
+            // BtnGeneratePronic
+            // 
+            this.BtnGeneratePronic.Location = new System.Drawing.Point(6, 19);
+            this.BtnGeneratePronic.Name = "BtnGeneratePronic";
+            this.BtnGeneratePronic.Size = new System.Drawing.Size(113, 23);
+            this.BtnGeneratePronic.TabIndex = 0;
+            this.BtnGeneratePronic.Text = "Generate Pronic";
+            this.BtnGeneratePronic.UseVisualStyleBackColor = true;
+            this.BtnGeneratePronic.Click += new System.EventHandler(this.BtnGeneratePronic_Click);
+            // 
+            // groupBox4
+            // 
+            this.groupBox4.BackColor = System.Drawing.SystemColors.InactiveCaption;
+            this.groupBox4.Controls.Add(this.lstDisplay);
+            this.groupBox4.Controls.Add(this.BtnGeneratePronic);
+            this.groupBox4.ForeColor = System.Drawing.SystemColors.Highlight;
+            this.groupBox4.Location = new System.Drawing.Point(233, 217);
+            this.groupBox4.Name = "groupBox4";
+            this.groupBox4.Size = new System.Drawing.Size(234, 175);
+            this.groupBox4.TabIndex = 26;
+            this.groupBox4.TabStop = false;
+            this.groupBox4.Text = "Pronic Numbers";
+            this.groupBox4.Enter += new System.EventHandler(this.groupBox4_Enter);
+            // 
+            // BtnAdd54
+            // 
+            this.BtnAdd54.Location = new System.Drawing.Point(30, 20);
+            this.BtnAdd54.Name = "BtnAdd54";
+            this.BtnAdd54.Size = new System.Drawing.Size(75, 23);
+            this.BtnAdd54.TabIndex = 25;
+            this.BtnAdd54.Text = "Add 5+4";
+            this.BtnAdd54.UseVisualStyleBackColor = true;
+            this.BtnAdd54.Click += new System.EventHandler(this.BtnAdd54_Click);
+            // 
+            // BtnPrintMax
+            // 
+            this.BtnPrintMax.Location = new System.Drawing.Point(30, 56);
+            this.BtnPrintMax.Name = "BtnPrintMax";
+            this.BtnPrintMax.Size = new System.Drawing.Size(75, 26);
+            this.BtnPrintMax.TabIndex = 21;
+            this.BtnPrintMax.Text = "PrintMax Method";
+            this.BtnPrintMax.UseVisualStyleBackColor = true;
+            this.BtnPrintMax.Click += new System.EventHandler(this.BtnPrintMax_Click);
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(16, 28);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(13, 13);
+            this.label4.TabIndex = 1;
+            this.label4.Text = "a";
+            // 
+            // BtnPrintSign
+            // 
+            this.BtnPrintSign.Location = new System.Drawing.Point(35, 54);
+            this.BtnPrintSign.Name = "BtnPrintSign";
+            this.BtnPrintSign.Size = new System.Drawing.Size(100, 28);
+            this.BtnPrintSign.TabIndex = 0;
+            this.BtnPrintSign.Text = "PrintSign Method";
+            this.BtnPrintSign.UseVisualStyleBackColor = true;
+            this.BtnPrintSign.Click += new System.EventHandler(this.BtnPrintSign_Click);
+            // 
+            // TxtNumber
+            // 
+            this.TxtNumber.Location = new System.Drawing.Point(35, 28);
+            this.TxtNumber.Name = "TxtNumber";
+            this.TxtNumber.Size = new System.Drawing.Size(100, 20);
+            this.TxtNumber.TabIndex = 0;
+            this.TxtNumber.TextChanged += new System.EventHandler(this.TxtNumber_TextChanged);
+            // 
+            // BtnMultOutput
+            // 
+            this.BtnMultOutput.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
+            this.BtnMultOutput.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.BtnMultOutput.ForeColor = System.Drawing.Color.Red;
+            this.BtnMultOutput.Location = new System.Drawing.Point(487, 188);
+            this.BtnMultOutput.Name = "BtnMultOutput";
+            this.BtnMultOutput.Size = new System.Drawing.Size(115, 34);
+            this.BtnMultOutput.TabIndex = 30;
+            this.BtnMultOutput.Text = "Multiple outputs";
+            this.BtnMultOutput.UseVisualStyleBackColor = false;
+            this.BtnMultOutput.Click += new System.EventHandler(this.BtnMultOutput_Click);
+            // 
+            // groupBox3
+            // 
+            this.groupBox3.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
+            this.groupBox3.Controls.Add(this.label4);
+            this.groupBox3.Controls.Add(this.BtnPrintSign);
+            this.groupBox3.Controls.Add(this.TxtNumber);
+            this.groupBox3.Location = new System.Drawing.Point(30, 100);
+            this.groupBox3.Name = "groupBox3";
+            this.groupBox3.Size = new System.Drawing.Size(186, 96);
+            this.groupBox3.TabIndex = 22;
+            this.groupBox3.TabStop = false;
+            this.groupBox3.Text = "Print Sign Method";
+            this.groupBox3.Enter += new System.EventHandler(this.groupBox3_Enter);
+            // 
+            // btnBack
+            // 
+            this.btnBack.Location = new System.Drawing.Point(695, 408);
+            this.btnBack.Name = "btnBack";
+            this.btnBack.Size = new System.Drawing.Size(75, 23);
+            this.btnBack.TabIndex = 24;
+            this.btnBack.Text = "Back";
+            this.btnBack.UseVisualStyleBackColor = true;
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(6, 22);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(86, 13);
+            this.label3.TabIndex = 2;
+            this.label3.Text = "Current Balance:";
+            // 
+            // TxtBalance
+            // 
+            this.TxtBalance.Location = new System.Drawing.Point(120, 19);
+            this.TxtBalance.Name = "TxtBalance";
+            this.TxtBalance.Size = new System.Drawing.Size(100, 20);
+            this.TxtBalance.TabIndex = 2;
+            this.TxtBalance.TextChanged += new System.EventHandler(this.TxtBalance_TextChanged);
+            // 
+            // TxtAmount
+            // 
+            this.TxtAmount.Location = new System.Drawing.Point(28, 90);
+            this.TxtAmount.Name = "TxtAmount";
+            this.TxtAmount.Size = new System.Drawing.Size(100, 20);
+            this.TxtAmount.TabIndex = 2;
+            this.TxtAmount.TextChanged += new System.EventHandler(this.TxtAmount_TextChanged);
+            // 
+            // BtnCheckBalance
+            // 
+            this.BtnCheckBalance.Location = new System.Drawing.Point(145, 150);
+            this.BtnCheckBalance.Name = "BtnCheckBalance";
+            this.BtnCheckBalance.Size = new System.Drawing.Size(75, 23);
+            this.BtnCheckBalance.TabIndex = 0;
+            this.BtnCheckBalance.Text = "Check Balance";
+            this.BtnCheckBalance.UseVisualStyleBackColor = true;
+            this.BtnCheckBalance.Click += new System.EventHandler(this.BtnCheckBalance_Click);
+            // 
+            // BtnWithdraw
+            // 
+            this.BtnWithdraw.Location = new System.Drawing.Point(145, 111);
+            this.BtnWithdraw.Name = "BtnWithdraw";
+            this.BtnWithdraw.Size = new System.Drawing.Size(75, 23);
+            this.BtnWithdraw.TabIndex = 0;
+            this.BtnWithdraw.Text = "Withdraw";
+            this.BtnWithdraw.UseVisualStyleBackColor = true;
+            this.BtnWithdraw.Click += new System.EventHandler(this.BtnWithdraw_Click);
+            // 
+            // groupBox2
+            // 
+            this.groupBox2.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
+            this.groupBox2.Controls.Add(this.label3);
+            this.groupBox2.Controls.Add(this.TxtBalance);
+            this.groupBox2.Controls.Add(this.TxtAmount);
+            this.groupBox2.Controls.Add(this.BtnCheckBalance);
+            this.groupBox2.Controls.Add(this.BtnWithdraw);
+            this.groupBox2.Controls.Add(this.BtnDeposit);
+            this.groupBox2.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.groupBox2.ForeColor = System.Drawing.Color.Tomato;
+            this.groupBox2.Location = new System.Drawing.Point(233, 20);
+            this.groupBox2.Name = "groupBox2";
+            this.groupBox2.Size = new System.Drawing.Size(234, 183);
+            this.groupBox2.TabIndex = 23;
+            this.groupBox2.TabStop = false;
+            this.groupBox2.Text = "IE Bank";
+            this.groupBox2.Enter += new System.EventHandler(this.groupBox2_Enter);
+            // 
+            // BtnDeposit
+            // 
+            this.BtnDeposit.Location = new System.Drawing.Point(145, 66);
+            this.BtnDeposit.Name = "BtnDeposit";
+            this.BtnDeposit.Size = new System.Drawing.Size(75, 23);
+            this.BtnDeposit.TabIndex = 0;
+            this.BtnDeposit.Text = "Deposit";
+            this.BtnDeposit.UseVisualStyleBackColor = true;
+            this.BtnDeposit.Click += new System.EventHandler(this.BtnDeposit_Click);
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(16, 66);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(13, 13);
+            this.label2.TabIndex = 1;
+            this.label2.Text = "b";
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(16, 28);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(13, 13);
+            this.label1.TabIndex = 1;
+            this.label1.Text = "a";
+            // 
+            // TxtB
+            // 
+            this.TxtB.Location = new System.Drawing.Point(57, 63);
+            this.TxtB.Name = "TxtB";
+            this.TxtB.Size = new System.Drawing.Size(100, 20);
+            this.TxtB.TabIndex = 0;
+            this.TxtB.TextChanged += new System.EventHandler(this.TxtB_TextChanged);
+            // 
+            // TxtA
+            // 
+            this.TxtA.Location = new System.Drawing.Point(57, 28);
+            this.TxtA.Name = "TxtA";
+            this.TxtA.Size = new System.Drawing.Size(100, 20);
+            this.TxtA.TabIndex = 0;
+            this.TxtA.TextChanged += new System.EventHandler(this.TxtA_TextChanged);
+            // 
+            // groupBox1
+            // 
+            this.groupBox1.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
+            this.groupBox1.Controls.Add(this.label2);
+            this.groupBox1.Controls.Add(this.label1);
+            this.groupBox1.Controls.Add(this.TxtB);
+            this.groupBox1.Controls.Add(this.BtnCalculate);
+            this.groupBox1.Controls.Add(this.TxtA);
+            this.groupBox1.Location = new System.Drawing.Point(30, 217);
+            this.groupBox1.Name = "groupBox1";
+            this.groupBox1.Size = new System.Drawing.Size(186, 185);
+            this.groupBox1.TabIndex = 20;
+            this.groupBox1.TabStop = false;
+            this.groupBox1.Text = "Calculator using Methods";
+            // 
+            // BtnCalculate
+            // 
+            this.BtnCalculate.Location = new System.Drawing.Point(57, 106);
+            this.BtnCalculate.Name = "BtnCalculate";
+            this.BtnCalculate.Size = new System.Drawing.Size(95, 28);
+            this.BtnCalculate.TabIndex = 0;
+            this.BtnCalculate.Text = "Calculate";
+            this.BtnCalculate.UseVisualStyleBackColor = true;
+            this.BtnCalculate.Click += new System.EventHandler(this.BtnCalculate_Click);
+            // 
+            // frmMethods
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.BtnMultOutputTuple);
+            this.Controls.Add(this.PassArg_out);
+            this.Controls.Add(this.BtnArgByVal);
+            this.Controls.Add(this.BtnArgByRef);
+            this.Controls.Add(this.groupBox4);
+            this.Controls.Add(this.BtnAdd54);
+            this.Controls.Add(this.BtnPrintMax);
+            this.Controls.Add(this.BtnMultOutput);
+            this.Controls.Add(this.groupBox3);
+            this.Controls.Add(this.btnBack);
+            this.Controls.Add(this.groupBox2);
+            this.Controls.Add(this.groupBox1);
+            this.Name = "frmMethods";
+            this.Text = "Methods";
+            this.Load += new System.EventHandler(this.frmMethods_Load);
+            this.groupBox4.ResumeLayout(false);
+            this.groupBox3.ResumeLayout(false);
+            this.groupBox3.PerformLayout();
+            this.groupBox2.ResumeLayout(false);
+            this.groupBox2.PerformLayout();
+            this.groupBox1.ResumeLayout(false);
+            this.groupBox1.PerformLayout();
+            this.ResumeLayout(false);
+
+        }
+
+        #endregion
+
+        private System.Windows.Forms.Button BtnCalculate;
+        private System.Windows.Forms.GroupBox groupBox1;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.TextBox TxtB;
+        private System.Windows.Forms.TextBox TxtA;
+        private System.Windows.Forms.GroupBox groupBox2;
+        private System.Windows.Forms.Button BtnCheckBalance;
+        private System.Windows.Forms.Button BtnWithdraw;
+        private System.Windows.Forms.Button BtnDeposit;
+        private System.Windows.Forms.Button btnBack;
+        private System.Windows.Forms.GroupBox groupBox3;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Button BtnPrintSign;
+        private System.Windows.Forms.TextBox TxtNumber;
+        private System.Windows.Forms.Button BtnPrintMax;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.TextBox TxtBalance;
+        private System.Windows.Forms.TextBox TxtAmount;
+        private System.Windows.Forms.Button BtnAdd54;
+        private System.Windows.Forms.GroupBox groupBox4;
+        private System.Windows.Forms.Button BtnGeneratePronic;
+        private System.Windows.Forms.ListBox lstDisplay;
+        private System.Windows.Forms.Button BtnArgByRef;
+        private System.Windows.Forms.Button BtnArgByVal;
+        private System.Windows.Forms.Button PassArg_out;
+        private System.Windows.Forms.Button BtnMultOutput;
+        private System.Windows.Forms.Button BtnMultOutputTuple;
+    }
+}

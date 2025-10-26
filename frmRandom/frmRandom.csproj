@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{5E1A5218-3D85-4511-8575-09F5E6D07DD6}</ProjectGuid>
+    <ProjectGuid>{FD64FAF3-E2BB-4048-A956-B164F5C3220F}</ProjectGuid>
     <OutputType>WinExe</OutputType>
-    <RootNamespace>MyAppQuiz</RootNamespace>
-    <AssemblyName>MyAppQuiz</AssemblyName>
+    <RootNamespace>frmRandom</RootNamespace>
+    <AssemblyName>frmRandom</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -52,83 +52,8 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
-    <Compile Include="Form2.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Form2.Designer.cs">
-      <DependentUpon>Form2.cs</DependentUpon>
-    </Compile>
-    <Compile Include="frmAbout.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="frmAbout.Designer.cs">
-      <DependentUpon>frmAbout.cs</DependentUpon>
-    </Compile>
-    <Compile Include="frmCalculations.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="frmCalculations.Designer.cs">
-      <DependentUpon>frmCalculations.cs</DependentUpon>
-    </Compile>
-    <Compile Include="frmCheckbox1.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="frmCheckbox1.Designer.cs">
-      <DependentUpon>frmCheckbox1.cs</DependentUpon>
-    </Compile>
-    <Compile Include="frmMethods.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="frmMethods.Designer.cs">
-      <DependentUpon>frmMethods.cs</DependentUpon>
-    </Compile>
-    <Compile Include="frmQuiz.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="frmQuiz.Designer.cs">
-      <DependentUpon>frmQuiz.cs</DependentUpon>
-    </Compile>
-    <Compile Include="frmRadio1.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="frmRadio1.Designer.cs">
-      <DependentUpon>frmRadio1.cs</DependentUpon>
-    </Compile>
-    <Compile Include="frmRandom.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="frmRandom.Designer.cs">
-      <DependentUpon>frmRandom.cs</DependentUpon>
-    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="Form1.resx">
-      <DependentUpon>Form1.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Form2.resx">
-      <DependentUpon>Form2.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="frmAbout.resx">
-      <DependentUpon>frmAbout.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="frmCalculations.resx">
-      <DependentUpon>frmCalculations.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="frmCheckbox1.resx">
-      <DependentUpon>frmCheckbox1.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="frmMethods.resx">
-      <DependentUpon>frmMethods.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="frmQuiz.resx">
-      <DependentUpon>frmQuiz.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="frmRadio1.resx">
-      <DependentUpon>frmRadio1.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="frmRandom.resx">
-      <DependentUpon>frmRandom.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>

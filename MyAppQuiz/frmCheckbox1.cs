@@ -89,5 +89,10 @@ namespace MyAppQuiz
             MessageBox.Show(result, "Your Selection");
 
         }
+
+        private void FrmCheckbox1_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
