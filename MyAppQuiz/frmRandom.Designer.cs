@@ -48,6 +48,7 @@
             // 
             // BtnRandomNum
             // 
+            this.BtnRandomNum.Font = new System.Drawing.Font("Comic Sans MS", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BtnRandomNum.Location = new System.Drawing.Point(174, 17);
             this.BtnRandomNum.Margin = new System.Windows.Forms.Padding(2);
             this.BtnRandomNum.Name = "BtnRandomNum";
@@ -60,15 +61,16 @@
             // LblRGB
             // 
             this.LblRGB.AutoSize = true;
-            this.LblRGB.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LblRGB.Font = new System.Drawing.Font("Comic Sans MS", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.LblRGB.Location = new System.Drawing.Point(124, 337);
             this.LblRGB.Name = "LblRGB";
-            this.LblRGB.Size = new System.Drawing.Size(45, 19);
+            this.LblRGB.Size = new System.Drawing.Size(57, 23);
             this.LblRGB.TabIndex = 23;
             this.LblRGB.Text = "r-g-b";
             // 
             // btnGenerateRandom
             // 
+            this.btnGenerateRandom.Font = new System.Drawing.Font("Comic Sans MS", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnGenerateRandom.Location = new System.Drawing.Point(16, 279);
             this.btnGenerateRandom.Name = "btnGenerateRandom";
             this.btnGenerateRandom.Size = new System.Drawing.Size(256, 55);
@@ -79,7 +81,8 @@
             // 
             // btnBack
             // 
-            this.btnBack.Location = new System.Drawing.Point(622, 311);
+            this.btnBack.Font = new System.Drawing.Font("Comic Sans MS", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnBack.Location = new System.Drawing.Point(463, 311);
             this.btnBack.Name = "btnBack";
             this.btnBack.Size = new System.Drawing.Size(75, 23);
             this.btnBack.TabIndex = 21;
@@ -89,6 +92,7 @@
             // 
             // BtnRandomIneger
             // 
+            this.BtnRandomIneger.Font = new System.Drawing.Font("Comic Sans MS", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BtnRandomIneger.Location = new System.Drawing.Point(8, 3);
             this.BtnRandomIneger.Name = "BtnRandomIneger";
             this.BtnRandomIneger.Size = new System.Drawing.Size(131, 43);
@@ -99,7 +103,7 @@
             // 
             // btnSeed
             // 
-            this.btnSeed.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSeed.Font = new System.Drawing.Font("Comic Sans MS", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnSeed.Location = new System.Drawing.Point(53, 3);
             this.btnSeed.Name = "btnSeed";
             this.btnSeed.Size = new System.Drawing.Size(113, 34);
@@ -128,7 +132,7 @@
             // 
             this.LblDisplay.AutoSize = true;
             this.LblDisplay.Font = new System.Drawing.Font("Palatino Linotype", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LblDisplay.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
+            this.LblDisplay.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.LblDisplay.Location = new System.Drawing.Point(3, 196);
             this.LblDisplay.Name = "LblDisplay";
             this.LblDisplay.Size = new System.Drawing.Size(136, 26);
@@ -138,6 +142,7 @@
             // 
             // BtnRandomDouble
             // 
+            this.BtnRandomDouble.Font = new System.Drawing.Font("Comic Sans MS", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BtnRandomDouble.Location = new System.Drawing.Point(8, 150);
             this.BtnRandomDouble.Name = "BtnRandomDouble";
             this.BtnRandomDouble.Size = new System.Drawing.Size(131, 43);
@@ -148,6 +153,7 @@
             // 
             // BtnRandomInegerMax
             // 
+            this.BtnRandomInegerMax.Font = new System.Drawing.Font("Comic Sans MS", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BtnRandomInegerMax.Location = new System.Drawing.Point(8, 101);
             this.BtnRandomInegerMax.Name = "BtnRandomInegerMax";
             this.BtnRandomInegerMax.Size = new System.Drawing.Size(131, 43);
@@ -158,6 +164,7 @@
             // 
             // BtnRandomInegerDefault
             // 
+            this.BtnRandomInegerDefault.Font = new System.Drawing.Font("Comic Sans MS", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BtnRandomInegerDefault.Location = new System.Drawing.Point(8, 52);
             this.BtnRandomInegerDefault.Name = "BtnRandomInegerDefault";
             this.BtnRandomInegerDefault.Size = new System.Drawing.Size(131, 43);
@@ -171,14 +178,14 @@
             this.panel2.Controls.Add(this.btnSeed);
             this.panel2.Controls.Add(this.cmbRnd1);
             this.panel2.Controls.Add(this.cmbRnd2);
-            this.panel2.Location = new System.Drawing.Point(459, 8);
+            this.panel2.Location = new System.Drawing.Point(232, 81);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(238, 129);
             this.panel2.TabIndex = 26;
             // 
             // panel1
             // 
-            this.panel1.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.panel1.BackColor = System.Drawing.Color.Teal;
             this.panel1.Controls.Add(this.LblDisplay);
             this.panel1.Controls.Add(this.BtnRandomDouble);
             this.panel1.Controls.Add(this.BtnRandomInegerMax);
@@ -193,7 +200,8 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(713, 365);
+            this.BackColor = System.Drawing.SystemColors.ActiveBorder;
+            this.ClientSize = new System.Drawing.Size(551, 349);
             this.Controls.Add(this.BtnRandomNum);
             this.Controls.Add(this.LblRGB);
             this.Controls.Add(this.btnGenerateRandom);
